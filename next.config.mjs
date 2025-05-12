@@ -12,9 +12,10 @@ const nextConfig = {
       // },
     ],
   },
+  // Disable experimental features that might cause issues in production
   experimental: {
-    // Enable useful experimental features
-    optimizeCss: true,
+    // Disable optimizeCss to prevent critters-related issues
+    optimizeCss: false,
     scrollRestoration: true,
   },
 };
